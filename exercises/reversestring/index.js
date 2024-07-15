@@ -33,13 +33,30 @@
 
 // using recursion 
 
+// function reverse(str) {
+
+//     if (str === "")
+//         return "";
+//     else return reverse(str.substr(1)) + str.charAt(0);
+// }
+
+//using for of loop
+// function reverse(str){
+//     let reversedString = "";
+
+//     for (let char  of str){
+//         reversedString =  char + reversedString;
+//     }
+
+//     return reversedString;
+// }
+
+
+//using the reduce function
 function reverse(str) {
+    return str.split("").reduce((reversedString, char) => char + reversedString , "");
 
-    if (str === "")
-        return "";
-    else return reverse(str.substr(1)) + str.charAt(0);
+
+
 }
-
-
-
 module.exports = reverse;
