@@ -41,22 +41,20 @@
 // }
 
 //using for of loop
-// function reverse(str){
-//     let reversedString = "";
+function reverse(str){
+    let reversedString = "";
 
-//     for (let char  of str){
-//         reversedString =  char + reversedString;
-//     }
+    for (let char  of str){
+        reversedString =  char + reversedString;
+    }
 
-//     return reversedString;
-// }
+    return reversedString;
+}
 
 
 //using the reduce function
-function reverse(str) {
-    return str.split("").reduce((reversedString, char) => char + reversedString , "");
-
-
-
-}
+// function reverse(str) {
+//     return str.split("").reduce((reversedString, char) => char + reversedString , "");
+// }
+reverse("asdf");
 module.exports = reverse;
